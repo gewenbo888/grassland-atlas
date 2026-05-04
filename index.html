@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grassland Atlas — Inner Mongolia · Ulanqab · Chahar Front Banner · Tuguiwula | 草原图谱</title>
+<meta name="description" content="A multi-scale geographic intelligence platform: Inner Mongolia → Ulanqab → Chahar Right Front Banner → Tuguiwula Town. Geography, history, culture, settlement, economy, daily life, connectivity, and regional simulation. Bilingual EN / 中文.">
+<meta name="keywords" content="Inner Mongolia, Ulanqab, Chahar Right Front Banner, Tuguiwula, grassland atlas, steppe geography, banner system, 内蒙古, 乌兰察布, 察哈尔右翼前旗, 土贵乌拉镇">
+<meta name="author" content="Gewenbo">
+<link rel="canonical" href="https://grassland.psyverse.fun/">
+<link rel="alternate" hreflang="en" href="https://grassland.psyverse.fun/">
+<link rel="alternate" hreflang="zh-CN" href="https://grassland.psyverse.fun/">
+<link rel="alternate" hreflang="x-default" href="https://grassland.psyverse.fun/">
+<meta property="og:title" content="Grassland Atlas — Inner Mongolia → Ulanqab → Tuguiwula">
+<meta property="og:description" content="Nine modules zooming from Inner Mongolia to a single town.">
+<meta property="og:url" content="https://grassland.psyverse.fun/">
+<meta property="og:site_name" content="Psyverse">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Grassland Atlas · 草原图谱">
+<meta name="twitter:description" content="Multi-scale geographic intelligence: macro grassland to a single town.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1c1d14">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Grassland Atlas","alternateName":"草原图谱","description":"A multi-layer regional system of Inner Mongolia, Ulanqab, Chahar Right Front Banner, and Tuguiwula.","url":"https://grassland.psyverse.fun/","inLanguage":["en","zh-CN"],"author":{"@type":"Person","name":"Gewenbo","url":"https://psyverse.fun/"},"publisher":{"@type":"Organization","name":"Psyverse","url":"https://psyverse.fun/"}}</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231c1d14'/><path d='M2 22 Q8 16 16 19 Q24 22 30 17' fill='none' stroke='%239aaa6a' stroke-width='1.6' stroke-linecap='round'/><path d='M2 27 Q8 22 16 24 Q24 27 30 22' fill='none' stroke='%23c79b53' stroke-width='1.4' stroke-linecap='round' opacity='.8'/><circle cx='25' cy='10' r='2' fill='%23eedfb6'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://analytics-dashboard-two-blue.vercel.app/tracker.js" defer></script>
+<style>
+:root{
+  --night:#1c1d14; --night-2:#26271c; --night-3:#2f3024; --rim:#3d3d2f;
+  --paper:#eedfb6; --paper-2:rgba(238,223,182,.65); --paper-3:rgba(238,223,182,.32);
+  --line:rgba(238,223,182,.13); --line-strong:rgba(238,223,182,.28);
+  --steppe:#9aaa6a;        /* sage green grassland */
+  --ochre:#c79b53;          /* warm earth ochre */
+  --slate:#7d8aa3;          /* sky / distance */
+  --rust:#b15e3f;           /* yurt door / fire */
+  --bone:#e8d8b6;           /* light bone */
+  --display:'EB Garamond',serif;
+  --sans:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--night);color:var(--paper);
+  font-family:var(--display);font-size:1.05rem;line-height:1.7;-webkit-font-smoothing:antialiased;
+  min-height:100vh;overflow-x:hidden;
+}
+body.zh{font-family:'Noto Serif SC',serif;}
+body.zh .display{font-family:'Noto Serif SC',serif;}
+.display{font-family:var(--display);letter-spacing:-.012em;}
+.mono{font-family:var(--mono);}
+.sans{font-family:var(--sans);}
+a{color:var(--ochre);text-decoration:none;}
+a:hover{color:var(--steppe);}
+
+.bg{position:fixed;inset:0;z-index:-1;
+  background:
+    radial-gradient(circle at 22% 18%,rgba(154,170,106,.06) 0%,transparent 50%),
+    radial-gradient(circle at 78% 82%,rgba(199,155,83,.05) 0%,transparent 50%),
+    var(--night);}
+.bg::after{content:"";position:absolute;inset:0;
+  background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Crect width='6' height='6' fill='%23eedfb6' opacity='.012'/%3E%3C/svg%3E");}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(28,29,20,.85);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1320px;margin:0 auto;padding:14px 32px;
+  display:flex;align-items:center;gap:20px;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:500;}
+.brand-mark{width:38px;height:38px;background:var(--night-2);border:1px solid var(--steppe);
+  display:grid;place-items:center;position:relative;overflow:hidden;}
+.brand-mark::after{content:"";position:absolute;left:6px;right:6px;top:14px;height:1.5px;background:var(--steppe);}
+.brand-mark::before{content:"";position:absolute;left:6px;right:6px;top:20px;height:1.5px;background:var(--ochre);opacity:.7;}
+.brand-mark span{position:absolute;top:7px;right:7px;width:4px;height:4px;border-radius:50%;background:var(--bone);}
+.brand-text{font-family:var(--display);font-size:1.32rem;font-weight:500;letter-spacing:-.005em;}
+.brand-text small{display:block;font-family:var(--mono);font-size:.66rem;color:var(--paper-3);letter-spacing:.16em;text-transform:uppercase;margin-top:1px;}
+.nav-links{display:flex;gap:18px;margin-left:auto;flex-wrap:wrap;}
+.nav-links a{color:var(--paper-2);font-size:.78rem;font-weight:500;
+  transition:color .15s;font-family:var(--mono);text-transform:lowercase;letter-spacing:.04em;}
+.nav-links a:hover{color:var(--steppe);}
+.lang-btn{padding:6px 14px;border:1px solid var(--line-strong);background:transparent;
+  color:var(--paper);border-radius:0;font-family:var(--mono);font-size:.78rem;cursor:pointer;
+  transition:all .15s;letter-spacing:.06em;}
+.lang-btn:hover{border-color:var(--steppe);color:var(--steppe);}
+@media(max-width:1100px){.nav-links{display:none;}}
+
+section{padding:110px 32px;position:relative;}
+.wrap{max-width:1320px;margin:0 auto;}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:.74rem;
+  color:var(--steppe);letter-spacing:.22em;text-transform:uppercase;
+  padding:5px 0 5px 18px;border-left:2px solid var(--steppe);margin-bottom:24px;}
+h1{font-family:var(--display);font-size:clamp(2.8rem,7vw,6rem);
+  line-height:1;letter-spacing:-.025em;margin-bottom:24px;font-weight:500;}
+h1 .it{font-style:italic;color:var(--ochre);}
+h2{font-family:var(--display);font-size:clamp(2rem,4.6vw,3.6rem);
+  line-height:1.05;letter-spacing:-.02em;margin-bottom:14px;font-weight:500;}
+h3{font-family:var(--display);font-size:1.5rem;font-weight:500;margin-bottom:8px;}
+h4{font-family:var(--mono);font-size:.74rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--steppe);
+  margin-bottom:14px;}
+.lede{font-size:1.18rem;color:var(--paper-2);max-width:820px;line-height:1.75;font-style:italic;}
+.lede em{color:var(--ochre);}
+.section-head{margin-bottom:48px;max-width:840px;}
+
+/* HERO */
+.hero{padding:170px 32px 80px;}
+.hero h1{max-width:1100px;}
+.hero h1 small{display:block;font-family:var(--mono);font-size:.92rem;font-weight:400;color:var(--paper-3);letter-spacing:.08em;margin-top:18px;}
+.hero .lede{margin-bottom:36px;font-size:1.22rem;}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{padding:13px 26px;border-radius:0;font-family:var(--mono);font-size:.82rem;
+  font-weight:500;cursor:pointer;transition:all .2s;
+  display:inline-flex;align-items:center;gap:8px;border:1px solid transparent;letter-spacing:.04em;}
+.btn-pri{background:var(--steppe);color:var(--night);}
+.btn-pri:hover{background:var(--ochre);}
+.btn-sec{background:transparent;border-color:var(--line-strong);color:var(--paper);}
+.btn-sec:hover{border-color:var(--steppe);color:var(--steppe);}
+
+.scale-rail{margin-top:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  border:1px solid var(--line);background:var(--line);}
+@media(max-width:880px){.scale-rail{grid-template-columns:1fr 1fr;}}
+.scale-cell{padding:24px 22px;background:var(--night-2);position:relative;}
+.scale-cell::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--steppe);}
+.scale-cell:nth-child(2)::before{background:var(--slate);}
+.scale-cell:nth-child(3)::before{background:var(--ochre);}
+.scale-cell:nth-child(4)::before{background:var(--rust);}
+.scale-cell .lvl{font-family:var(--mono);font-size:.7rem;color:var(--paper-3);letter-spacing:.16em;text-transform:uppercase;}
+.scale-cell .name-zh{font-family:'Noto Serif SC',serif;font-size:1.4rem;font-weight:700;color:var(--paper);margin:6px 0 2px;}
+.scale-cell .name-en{font-family:var(--display);font-size:.95rem;font-style:italic;color:var(--paper-2);}
+.scale-cell .stat{font-family:var(--mono);font-size:.78rem;color:var(--steppe);margin-top:10px;}
+
+/* MODULE 1 — MULTI-SCALE MAP */
+.map-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.map-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+.map-tab{padding:9px 18px;background:transparent;border:1px solid var(--line);color:var(--paper-2);
+  font-family:var(--mono);font-size:.82rem;cursor:pointer;letter-spacing:.06em;transition:all .15s;}
+.map-tab.active,.map-tab:hover{border-color:var(--steppe);color:var(--steppe);background:rgba(154,170,106,.06);}
+.map-controls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;font-family:var(--mono);font-size:.74rem;}
+.map-layer{padding:6px 12px;background:var(--night);border:1px solid var(--line);color:var(--paper-2);cursor:pointer;letter-spacing:.04em;transition:all .15s;}
+.map-layer.active{border-color:var(--ochre);color:var(--ochre);background:rgba(199,155,83,.06);}
+.map-canvas{height:560px;background:radial-gradient(ellipse at center,var(--night-3),var(--night-2));border:1px solid var(--line);position:relative;overflow:hidden;}
+.map-canvas svg{width:100%;height:100%;display:block;}
+.map-info{margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+@media(max-width:880px){.map-info{grid-template-columns:1fr 1fr;}}
+.map-stat{padding:14px;background:var(--night);border:1px solid var(--line);}
+.map-stat .k{font-family:var(--mono);font-size:.7rem;color:var(--paper-3);letter-spacing:.14em;text-transform:uppercase;}
+.map-stat .v{font-family:var(--display);font-size:1.4rem;color:var(--steppe);font-weight:600;line-height:1.1;margin-top:4px;}
+
+/* MODULE 2 — GEOGRAPHY */
+.geo-stage{margin-top:30px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px;}
+@media(max-width:980px){.geo-stage{grid-template-columns:1fr;}}
+.geo-content{background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.geo-content h5{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--steppe);margin:18px 0 8px;font-weight:500;}
+.geo-content h5:first-child{margin-top:0;}
+.geo-content p{margin-bottom:12px;color:var(--paper);font-size:.98rem;line-height:1.75;}
+.geo-content strong{color:var(--steppe);}
+.geo-climate{padding:24px;background:var(--night-2);border:1px solid var(--line);}
+.geo-climate h5{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ochre);margin-bottom:14px;}
+.climate-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem;}
+.climate-row:last-child{border-bottom:none;}
+.climate-row .month{font-family:var(--mono);color:var(--paper-3);}
+.climate-row .temp{font-family:var(--display);font-style:italic;color:var(--paper);}
+.climate-row .precip{font-family:var(--mono);color:var(--steppe);font-size:.84rem;text-align:right;min-width:60px;}
+.climate-grid{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.climate-stat{padding:12px;background:var(--night);border:1px solid var(--line);text-align:center;}
+.climate-stat .k{font-family:var(--mono);font-size:.66rem;color:var(--paper-3);letter-spacing:.12em;text-transform:uppercase;}
+.climate-stat .v{font-family:var(--display);font-size:1.4rem;color:var(--ochre);margin-top:3px;font-weight:600;}
+
+/* MODULE 3 — HISTORY */
+.hist-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.hist-axis{position:relative;height:80px;background:var(--night);border:1px solid var(--line);margin-bottom:24px;}
+.hist-axis::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:linear-gradient(90deg,var(--steppe),var(--ochre),var(--rust));transform:translateY(-50%);}
+.hist-event{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--night);border:2px solid var(--steppe);transform:translate(-50%,-50%);cursor:pointer;transition:all .2s;}
+.hist-event:hover,.hist-event.active{transform:translate(-50%,-50%) scale(1.5);background:var(--steppe);box-shadow:0 0 16px var(--steppe);}
+.hist-event-label{position:absolute;top:calc(50% + 14px);left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:.7rem;color:var(--paper-2);white-space:nowrap;pointer-events:none;}
+.hist-event-label small{display:block;font-family:var(--display);font-style:italic;font-size:.84rem;color:var(--paper-3);text-align:center;}
+.hist-detail{display:grid;grid-template-columns:280px 1fr;gap:30px;background:var(--night);border:1px solid var(--line);padding:24px;}
+@media(max-width:780px){.hist-detail{grid-template-columns:1fr;}}
+.hist-detail .when{font-family:var(--mono);font-size:.78rem;color:var(--steppe);letter-spacing:.06em;}
+.hist-detail .title{font-family:var(--display);font-size:1.6rem;font-weight:500;margin-bottom:6px;}
+.hist-detail .body p{margin-bottom:12px;color:var(--paper);}
+.hist-detail .body strong{color:var(--ochre);}
+.hist-detail h5{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin:18px 0 8px;font-weight:500;}
+.hist-detail ul{margin-left:18px;color:var(--paper-2);}
+.hist-detail ul li{margin-bottom:5px;font-size:.94rem;}
+
+/* MODULE 4 — CULTURE */
+.cul-stage{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+@media(max-width:980px){.cul-stage{grid-template-columns:1fr;}}
+.cul-half{padding:30px;background:var(--night-2);border:1px solid var(--line);border-top:3px solid;}
+.cul-half.mongol{border-top-color:var(--steppe);}
+.cul-half.han{border-top-color:var(--ochre);}
+.cul-half h5{font-family:var(--display);font-size:1.6rem;font-weight:500;margin-bottom:6px;}
+.cul-half .pct{font-family:var(--mono);font-size:.84rem;letter-spacing:.06em;margin-bottom:18px;}
+.cul-half.mongol .pct{color:var(--steppe);}
+.cul-half.han .pct{color:var(--ochre);}
+.cul-half h6{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-3);margin:14px 0 6px;font-weight:500;}
+.cul-half p{color:var(--paper);font-size:.94rem;line-height:1.7;margin-bottom:10px;}
+.cul-half ul{margin-left:18px;color:var(--paper-2);font-size:.9rem;}
+.cul-half ul li{margin-bottom:5px;}
+.cul-festivals{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:880px){.cul-festivals{grid-template-columns:1fr;}}
+.fest-card{padding:22px;background:var(--night-2);border:1px solid var(--line);border-left:3px solid var(--rust);}
+.fest-card .name-zh{font-family:'Noto Serif SC',serif;font-size:1.4rem;font-weight:700;color:var(--paper);}
+.fest-card .name-en{font-family:var(--display);font-size:.96rem;font-style:italic;color:var(--paper-2);margin-bottom:12px;}
+.fest-card .when{font-family:var(--mono);font-size:.74rem;color:var(--rust);letter-spacing:.06em;margin-bottom:10px;}
+.fest-card p{font-size:.88rem;color:var(--paper-2);line-height:1.65;}
+
+/* MODULE 5 — SETTLEMENT */
+.set-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.set-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;}
+@media(max-width:980px){.set-grid{grid-template-columns:1fr;}}
+.set-town{padding:24px;background:var(--night);border:1px solid var(--line);}
+.set-town .header{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;}
+.set-town .ch{font-family:'Noto Serif SC',serif;font-size:2.6rem;font-weight:700;color:var(--ochre);line-height:1;}
+.set-town .py{font-family:var(--mono);font-size:1.04rem;color:var(--paper-2);}
+.set-town .py small{display:block;font-family:var(--display);font-style:italic;font-size:.84rem;color:var(--paper-3);margin-top:2px;}
+.set-town p{color:var(--paper);font-size:.94rem;line-height:1.75;margin-bottom:12px;}
+.set-town strong{color:var(--ochre);}
+.set-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px;}
+.set-stat{padding:12px;background:var(--night-2);border:1px solid var(--line);}
+.set-stat .k{font-family:var(--mono);font-size:.66rem;color:var(--paper-3);letter-spacing:.12em;text-transform:uppercase;}
+.set-stat .v{font-family:var(--display);font-size:1.2rem;color:var(--steppe);font-weight:600;margin-top:3px;}
+.set-side{padding:24px;background:var(--night);border:1px solid var(--line);}
+.set-side h5{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--steppe);margin-bottom:14px;}
+.set-side .sched{display:flex;flex-direction:column;gap:8px;}
+.sched-row{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.88rem;align-items:baseline;}
+.sched-row:last-child{border-bottom:none;}
+.sched-row .key{font-family:var(--mono);font-size:.78rem;color:var(--ochre);}
+.sched-row .val{color:var(--paper);}
+
+/* MODULE 6 — ECONOMY */
+.eco-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.eco-bars{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
+.eco-bar{display:grid;grid-template-columns:160px 1fr 70px;gap:14px;align-items:center;padding:8px 0;}
+.eco-bar .sector{font-family:var(--display);font-size:1rem;color:var(--paper);}
+.eco-bar .sector small{display:block;font-family:var(--mono);font-size:.72rem;color:var(--paper-3);font-style:italic;margin-top:1px;}
+.eco-bar .meter{height:14px;background:var(--night);border:1px solid var(--line);overflow:hidden;}
+.eco-bar .meter div{height:100%;}
+.eco-bar.ag .meter div{background:var(--steppe);}
+.eco-bar.an .meter div{background:var(--ochre);}
+.eco-bar.en .meter div{background:var(--slate);}
+.eco-bar.man .meter div{background:var(--rust);}
+.eco-bar.svc .meter div{background:var(--bone);}
+.eco-bar .pct{font-family:var(--mono);font-size:.86rem;color:var(--ochre);text-align:right;font-weight:600;}
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:880px){.eco-grid{grid-template-columns:1fr;}}
+.eco-card{padding:22px;background:var(--night);border:1px solid var(--line);border-top:3px solid;}
+.eco-card.h{border-top-color:var(--ochre);}
+.eco-card.a{border-top-color:var(--steppe);}
+.eco-card.e{border-top-color:var(--slate);}
+.eco-card .lbl{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;}
+.eco-card.h .lbl{color:var(--ochre);}
+.eco-card.a .lbl{color:var(--steppe);}
+.eco-card.e .lbl{color:var(--slate);}
+.eco-card h5{font-family:var(--display);font-size:1.3rem;margin:6px 0 12px;}
+.eco-card p{font-size:.9rem;color:var(--paper-2);line-height:1.7;margin-bottom:10px;}
+.eco-card .figure{margin-top:14px;font-family:var(--mono);font-size:.86rem;color:var(--paper);}
+
+/* MODULE 7 — DAILY LIFE */
+.life-stage{margin-top:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+@media(max-width:980px){.life-stage{grid-template-columns:1fr 1fr;}}
+@media(max-width:540px){.life-stage{grid-template-columns:1fr;}}
+.life-card{padding:24px;background:var(--night-2);border:1px solid var(--line);border-top:3px solid var(--ochre);}
+.life-card .icon{font-family:var(--mono);font-size:.7rem;color:var(--ochre);letter-spacing:.16em;text-transform:uppercase;}
+.life-card h5{font-family:var(--display);font-size:1.3rem;margin:6px 0 12px;}
+.life-card p{font-size:.9rem;color:var(--paper-2);line-height:1.7;margin-bottom:8px;}
+.life-card .examples{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:.78rem;color:var(--paper-3);}
+.life-card .examples b{color:var(--steppe);font-style:normal;}
+
+/* MODULE 8 — CONNECTIVITY */
+.conn-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;}
+.conn-canvas{height:480px;background:radial-gradient(ellipse at center,var(--night-3),var(--night-2));border:1px solid var(--line);overflow:hidden;}
+.conn-canvas svg{width:100%;height:100%;display:block;}
+.conn-table{margin-top:18px;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);}
+.conn-row{display:grid;grid-template-columns:1fr 100px 100px 100px;gap:14px;padding:12px 18px;background:var(--night);align-items:center;}
+.conn-row.head{background:var(--night-3);font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-3);}
+.conn-row .city{font-family:'Noto Serif SC',serif;font-size:1rem;color:var(--paper);font-weight:600;}
+.conn-row .city small{display:block;font-family:var(--display);font-style:italic;font-size:.78rem;color:var(--paper-3);font-weight:400;margin-top:1px;}
+.conn-row .num{font-family:var(--mono);font-size:.86rem;color:var(--steppe);text-align:right;}
+@media(max-width:780px){.conn-row{grid-template-columns:1fr 80px;}.conn-row > .num:nth-child(n+3){display:none;}.conn-row.head{display:none;}}
+
+/* MODULE 9 — SIMULATION */
+.sim-stage{margin-top:30px;background:var(--night-2);border:1px solid var(--line);padding:30px;display:grid;grid-template-columns:340px 1fr;gap:30px;}
+@media(max-width:980px){.sim-stage{grid-template-columns:1fr;}}
+.sim-controls{display:flex;flex-direction:column;gap:14px;}
+.sim-slider{padding:14px;background:var(--night);border:1px solid var(--line);}
+.sim-slider .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.sim-slider .lbl{font-family:var(--display);font-size:1rem;}
+.sim-slider .val{font-family:var(--mono);font-size:.9rem;color:var(--ochre);font-weight:600;}
+.sim-slider input[type=range]{-webkit-appearance:none;width:100%;height:4px;background:var(--rim);border-radius:2px;outline:none;}
+.sim-slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;background:var(--ochre);border-radius:0;cursor:pointer;}
+.sim-slider .scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.66rem;color:var(--paper-3);margin-top:4px;}
+.sim-effects{display:flex;flex-direction:column;gap:10px;}
+.sim-fx{padding:14px 18px;background:var(--night);border:1px solid var(--line);border-left:3px solid var(--steppe);display:grid;grid-template-columns:120px 1fr 90px;gap:14px;align-items:center;}
+.sim-fx.bad{border-left-color:var(--rust);}
+.sim-fx.good{border-left-color:var(--steppe);}
+.sim-fx.neutral{border-left-color:var(--bone);}
+.sim-fx .domain{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-3);}
+.sim-fx .desc{font-size:.92rem;color:var(--paper);}
+.sim-fx .delta{font-family:var(--mono);font-size:.86rem;text-align:right;}
+.sim-fx.bad .delta{color:var(--rust);}
+.sim-fx.good .delta{color:var(--steppe);}
+.sim-fx.neutral .delta{color:var(--bone);}
+
+/* STRIPS */
+.strip{padding:74px 32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--night-2),var(--night));}
+.strip-quote{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.6rem);font-style:italic;text-align:center;max-width:980px;margin:0 auto;line-height:1.32;letter-spacing:-.015em;}
+.strip-quote .accent{color:var(--steppe);font-style:normal;}
+.strip-quote .ch{font-family:'Noto Serif SC',serif;color:var(--ochre);font-style:normal;}
+.strip-attr{text-align:center;font-family:var(--mono);font-size:.74rem;color:var(--paper-3);margin-top:20px;letter-spacing:.16em;text-transform:uppercase;}
+
+footer{padding:74px 32px 36px;border-top:1px solid var(--line);background:var(--night-2);}
+.foot-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:2fr repeat(3,1fr);gap:32px;}
+@media(max-width:740px){.foot-grid{grid-template-columns:1fr 1fr;}}
+.foot-col h5{font-family:var(--mono);font-size:.7rem;color:var(--paper-3);letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;}
+.foot-col a{display:block;padding:5px 0;color:var(--paper-2);font-size:.86rem;transition:color .15s;}
+.foot-col a:hover{color:var(--steppe);}
+.foot-bot{max-width:1320px;margin:32px auto 0;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--mono);font-size:.74rem;color:var(--paper-3);}
+
+.disclaimer{padding:16px 22px;background:var(--night);border-left:3px solid var(--slate);font-family:var(--mono);font-size:.78rem;color:var(--paper-2);line-height:1.65;font-style:italic;margin-top:24px;}
+.disclaimer b{color:var(--slate);font-style:normal;}
+
+.fadeup{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s;}
+.fadeup.in{opacity:1;transform:translateY(0);}
+*::-webkit-scrollbar{width:8px;height:8px;}
+*::-webkit-scrollbar-track{background:var(--night);}
+*::-webkit-scrollbar-thumb{background:var(--rim);border-radius:0;}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <div class="brand-mark"><span></span></div>
+      <div class="brand-text">
+        <span data-en="Grassland Atlas" data-zh="草原图谱"></span>
+        <small data-en="Inner Mongolia → Tuguiwula" data-zh="内蒙古 → 土贵乌拉"></small>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#map" data-en="map" data-zh="地图"></a>
+      <a href="#geography" data-en="geography" data-zh="地理"></a>
+      <a href="#history" data-en="history" data-zh="历史"></a>
+      <a href="#culture" data-en="culture" data-zh="文化"></a>
+      <a href="#settlement" data-en="settlement" data-zh="聚落"></a>
+      <a href="#economy" data-en="economy" data-zh="经济"></a>
+      <a href="#life" data-en="daily life" data-zh="生活"></a>
+      <a href="#connectivity" data-en="connect" data-zh="连接"></a>
+      <a href="#simulation" data-en="simulate" data-zh="模拟"></a>
+    </div>
+    <button class="lang-btn" id="lang-btn">中文</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">
+      <span data-en="A MULTI-LAYER REGIONAL SYSTEM" data-zh="一个多层级区域系统"></span>
+    </div>
+    <h1>
+      <span data-en="From a <span class='it'>steppe</span> to a single <span class='it'>town</span>." data-zh="从一片<span class='it'>草原</span>，到一个<span class='it'>小镇</span>。"></span>
+      <small data-en="Inner Mongolia · 1,183,000 km² → Ulanqab · 54,500 km² → Chahar Right Front Banner · 2,734 km² → Tuguiwula Town · 215 km²" data-zh="内蒙古 · 118.3 万 km² → 乌兰察布 · 5.45 万 km² → 察哈尔右翼前旗 · 2734 km² → 土贵乌拉镇 · 215 km²"></small>
+    </h1>
+    <p class="lede">
+      <span data-en="Most regional websites are tourism brochures. This is not. The Grassland Atlas treats geography, climate, history, ethnicity, settlement, economy, and infrastructure as <em>layers of one system</em> — and lets you zoom from the macro shape of Inner Mongolia all the way down to a single banner town in central Ulanqab. Plus a simulation engine that asks: <em>what if the climate, the economy, or the rail line changed?</em>" data-zh="多数地区网站是旅游手册。本站不是。草原图谱将地理、气候、历史、民族、聚落、经济、基础设施视为<em>同一系统的多层</em> —— 并让你从内蒙古的宏观形态一路缩放到乌兰察布腹地一个旗镇。加一个模拟引擎，提问：<em>如果气候、经济或铁路改变了呢？</em>"></span>
+    </p>
+    <div class="cta-row">
+      <a href="#map" class="btn btn-pri"><span data-en="Open the map" data-zh="打开地图"></span> →</a>
+      <a href="#simulation" class="btn btn-sec"><span data-en="Run a simulation" data-zh="运行模拟"></span></a>
+    </div>
+
+    <div class="scale-rail">
+      <div class="scale-cell">
+        <div class="lvl" data-en="L1 · PROVINCE" data-zh="L1 · 省级"></div>
+        <div class="name-zh">内蒙古</div>
+        <div class="name-en">Inner Mongolia · 自治区</div>
+        <div class="stat">~1,183,000 km² · 24M pop</div>
+      </div>
+      <div class="scale-cell">
+        <div class="lvl" data-en="L2 · PREFECTURE" data-zh="L2 · 地级市"></div>
+        <div class="name-zh">乌兰察布</div>
+        <div class="name-en">Ulanqab · 地级市</div>
+        <div class="stat">~54,500 km² · 1.7M pop</div>
+      </div>
+      <div class="scale-cell">
+        <div class="lvl" data-en="L3 · BANNER (县级)" data-zh="L3 · 旗（县级）"></div>
+        <div class="name-zh">察哈尔右翼前旗</div>
+        <div class="name-en">Chahar Right Front Banner</div>
+        <div class="stat">~2,734 km² · 175K pop</div>
+      </div>
+      <div class="scale-cell">
+        <div class="lvl" data-en="L4 · TOWN (乡镇)" data-zh="L4 · 镇"></div>
+        <div class="name-zh">土贵乌拉镇</div>
+        <div class="name-en">Tuguiwula Town · 旗治</div>
+        <div class="stat">~215 km² · 56K pop</div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <b data-en="On data:" data-zh="关于数据："></b> <span data-en="Population, area, and economic figures reference the 2020 PRC census, the Inner Mongolia Statistical Yearbook (2023), and Ulanqab municipal documents. Some town-level numbers are estimates with mixed evidence." data-zh="人口、面积、经济数据参考 2020 年中国人口普查、《内蒙古统计年鉴 2023》及乌兰察布市政文件。部分乡镇级数据为基于混合证据的估算。"></span>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-quote">
+      <span data-en="A <span class='ch'>镇</span> is not the smallest unit of a country.<br>It is the <span class='accent'>largest</span> unit of a <span class='accent'>life</span>." data-zh="一个<span class='ch'>镇</span>，不是国家的最小单位。<br>它是一个<span class='accent'>人生</span>的<span class='accent'>最大</span>单位。"></span>
+    </p>
+    <p class="strip-attr" data-en="— Grassland Atlas · Premise" data-zh="— 草原图谱 · 前提"></p>
+  </div>
+</section>
+
+<!-- MODULE 1 — MULTI-SCALE MAP -->
+<section id="map">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 01 · <span data-en="Multi-Scale Map System" data-zh="多尺度地图系统"></span></h4>
+      <h2><span data-en="Four scales. One geography." data-zh="四种尺度。同一地理。"></span></h2>
+      <p class="lede"><span data-en="The same place looks different at every magnification. The province shows you the relationship to Mongolia and the Beijing-Hebei corridor. The prefecture shows you the wind-corridor between two mountain ranges. The banner shows you the lake-and-grassland mix. The town shows you a railway intersection with a market in walking distance." data-zh="同一片土地在每个放大率下看起来都不同。省级显示与蒙古国及京冀走廊的关系。地市级显示两山之间的风之走廊。旗级显示湖与草地的镶嵌。镇级显示一个步行可达市场的铁路交汇点。"></span></p>
+    </div>
+
+    <div class="map-stage">
+      <div class="map-tabs" id="map-tabs"></div>
+      <div class="map-controls" id="map-layers"></div>
+      <div class="map-canvas">
+        <svg id="map-svg" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+      <div class="map-info" id="map-info"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 2 — GEOGRAPHY -->
+<section id="geography" style="background:linear-gradient(180deg,var(--night),var(--night-2),var(--night));">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 02 · <span data-en="Geography & Environment" data-zh="地理与环境"></span></h4>
+      <h2><span data-en="Cold, dry, windy — and that's the asset." data-zh="冷、干、有风 —— 而这正是资产。"></span></h2>
+      <p class="lede"><span data-en="Inner Mongolia sits on a plateau ~1,000 m above sea level. Ulanqab is on the Mongolian Plateau's southern edge. Tuguiwula's climate is sharply continental: 30°C summer days, -25°C winter nights, 350 mm of annual precipitation, and almost-constant wind. That wind is now an industry." data-zh="内蒙古坐落于海拔约 1000 米的高原。乌兰察布位于蒙古高原南缘。土贵乌拉气候典型大陆性：夏日 30°C，冬夜 -25°C，年降水 350 毫米，几乎常年有风。那股风，如今是一个产业。"></span></p>
+    </div>
+
+    <div class="geo-stage">
+      <div class="geo-content">
+        <h5 data-en="Plateau & steppe" data-zh="高原与草原"></h5>
+        <p data-en="Ulanqab sits on the <strong>Mongolian Plateau</strong> at 1,000-2,000 m elevation, sandwiched between the Yin Shan range to the south and the Greater Khingan range to the north-east. The terrain is mostly rolling grassland (<em>steppe</em>) with patches of meadow, salt flats, and seasonal lakes." data-zh="乌兰察布位于<strong>蒙古高原</strong>，海拔 1000-2000 米，南夹阴山，东北接大兴安岭。地貌以缓丘草原（<em>steppe</em>）为主，间杂草甸、盐碱地与季节性湖泊。"></p>
+
+        <h5 data-en="Grassland ecosystems" data-zh="草原生态系统"></h5>
+        <p data-en="The dominant ecosystem is <strong>typical steppe</strong> (Stipa-Leymus grassland) — short grasses adapted to drought and grazing pressure. Where rainfall increases (eastern Ulanqab), it transitions to meadow steppe; where it decreases (western Ulanqab), to desert steppe. <em>The whole system is at the edge of habitability for grasses</em>." data-zh="主导生态系统为<strong>典型草原</strong>（针茅—羊草草原） —— 短草，适应干旱与放牧压力。降水增多处（乌兰察布东部）过渡为草甸草原；降水减少处（西部）则为荒漠草原。<em>整个系统处于草本可居性边缘</em>。"></p>
+
+        <h5 data-en="Wind regime" data-zh="风系"></h5>
+        <p data-en="The <strong>wind corridor</strong> formed by the Yin Shan gap funnels Mongolian air south at average speeds of 5-8 m/s, with frequent gusts above 15 m/s. This made traditional fixed agriculture marginal — and modern wind-power generation transformative." data-zh="阴山缺口形成的<strong>风之走廊</strong>将蒙古气团南送，平均风速 5-8 m/s，常有 15 m/s 以上阵风。此使得传统定居农业边缘化 —— 而现代风电生产被改变了游戏规则。"></p>
+      </div>
+      <div class="geo-climate">
+        <h5 data-en="Tuguiwula climate · monthly" data-zh="土贵乌拉气候 · 月度"></h5>
+        <div id="climate-chart"></div>
+        <div class="climate-grid">
+          <div class="climate-stat"><div class="k" data-en="Annual mean" data-zh="年均温"></div><div class="v">3.5°C</div></div>
+          <div class="climate-stat"><div class="k" data-en="Annual precip" data-zh="年降水"></div><div class="v">350mm</div></div>
+          <div class="climate-stat"><div class="k" data-en="Frost-free days" data-zh="无霜日"></div><div class="v">115</div></div>
+          <div class="climate-stat"><div class="k" data-en="Wind days/yr" data-zh="风日/年"></div><div class="v">280+</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 3 — HISTORY -->
+<section id="history">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 03 · <span data-en="Historical Evolution" data-zh="历史演化"></span></h4>
+      <h2><span data-en="Steppe empires to railway towns." data-zh="从草原帝国到铁路市镇。"></span></h2>
+      <p class="lede"><span data-en="The Ulanqab region has been a <em>contact zone</em> between steppe and farm China for 2,500 years. Eight anchor moments tell the story — from Xiongnu raids through the Qing banner system to the railway and industrial transformations of the 20th century." data-zh="乌兰察布地区作为草原与农耕中国的<em>接触带</em>，已有 2500 年历史。八个锚点讲述这段故事 —— 从匈奴袭扰，经清代盟旗制度，到 20 世纪的铁路与工业转型。"></span></p>
+    </div>
+
+    <div class="hist-stage">
+      <div class="hist-axis" id="hist-axis"></div>
+      <div class="hist-detail" id="hist-detail"></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-quote">
+      <span data-en="A <span class='accent'>boundary</span> between two ways of life<br>is the <span class='accent'>thickest</span> kind of place." data-zh="两种生活方式之间的<span class='accent'>边界</span>，<br>是最<span class='accent'>厚重</span>的那种地方。"></span>
+    </p>
+    <p class="strip-attr" data-en="— Grassland Atlas · Postulate" data-zh="— 草原图谱 · 公设"></p>
+  </div>
+</section>
+
+<!-- MODULE 4 — CULTURE -->
+<section id="culture">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 04 · <span data-en="Ethnic & Cultural System" data-zh="民族与文化系统"></span></h4>
+      <h2><span data-en="Two peoples. One landscape." data-zh="两个民族。一片土地。"></span></h2>
+      <p class="lede"><span data-en="Modern Ulanqab is roughly <em>~93% Han</em> and <em>~5% Mongolian</em>, with smaller Hui, Manchu, and Korean communities. But the cultural texture is thicker than the demographic ratio — every place name is bilingual; herding still organizes the calendar in many sub-banners; and Mandarin and Mongolian co-exist on schools, signs, and government documents." data-zh="今日乌兰察布大致为<em>约 93% 汉族</em>与<em>约 5% 蒙古族</em>，另有较小的回族、满族、朝鲜族社区。但文化肌理比人口比更厚 —— 每一个地名都双语；许多苏木里牧业仍组织着年历；普通话与蒙古语并存于学校、招牌、政府文书。"></span></p>
+    </div>
+
+    <div class="cul-stage">
+      <div class="cul-half mongol">
+        <h5 data-en="Mongolian (蒙古族)" data-zh="蒙古族"></h5>
+        <div class="pct" data-en="~5% of Ulanqab population · ~85,000 people" data-zh="约占乌兰察布 5% · 约 8.5 万人"></div>
+        <h6 data-en="Language" data-zh="语言"></h6>
+        <p data-en="Inner Mongolian dialect of Mongolian, written in classical Mongolian script (vertical). Bilingualism with Mandarin is universal in the younger generation." data-zh="蒙古语内蒙古方言，使用传统回鹘式蒙古文（竖书）。年轻一代普遍蒙汉双语。"></p>
+        <h6 data-en="Herding culture (游牧→定居)" data-zh="游牧文化（→ 定居化）"></h6>
+        <p data-en="Traditional five-livestock herding (sheep, goats, cattle, horses, camels) persists in northern Ulanqab banners but has largely transitioned to fenced pasture. Mobile yurt-life is mostly ceremonial today." data-zh="传统五畜（羊、山羊、牛、马、骆驼）牧业仍存在于乌兰察布北部各旗，但多已转为围栏定牧。流动毡帐生活今多为仪式性的。"></p>
+        <h6 data-en="Religion" data-zh="宗教"></h6>
+        <p data-en="Tibetan Buddhism (Gelug school) historically dominant. A few active monasteries remain. Shamanic practices persist quietly in rural areas." data-zh="历史上以藏传佛教（格鲁派）为主。仍有少数活跃寺院。萨满传统在乡村低调延续。"></p>
+      </div>
+      <div class="cul-half han">
+        <h5 data-en="Han Chinese (汉族)" data-zh="汉族"></h5>
+        <div class="pct" data-en="~93% of Ulanqab population · ~1.6M people" data-zh="约占乌兰察布 93% · 约 160 万人"></div>
+        <h6 data-en="Migration history" data-zh="移民史"></h6>
+        <p data-en="Most Han families arrived during the Qing-era <strong>走西口 (Crossing the Western Pass)</strong> migration (17th-19th c) from Shanxi, Hebei, and Shaanxi — driven by drought and rural overpopulation in the north China plain." data-zh="多数汉族家庭来自清代<strong>走西口</strong>移民（17-19 世纪）—— 从山西、河北、陕西迁入，由华北平原的旱灾与人口压力推动。"></p>
+        <h6 data-en="Language" data-zh="语言"></h6>
+        <p data-en="Jin dialect (晋语) variants are spoken in much of southern Ulanqab — a distinct branch of Chinese with retained entering tones. Standard Mandarin dominates education, media, and administration." data-zh="乌兰察布南部多讲<strong>晋语</strong>变体 —— 中国语支的独立分支，保留入声。普通话主导教育、媒体、行政。"></p>
+        <h6 data-en="Settlement pattern" data-zh="聚落格局"></h6>
+        <p data-en="Han settlements are agricultural villages (村), typically 200-1,500 people each, organized around water access. Walls and courtyards reflect Shanxi-style architecture brought by the Western Pass migration." data-zh="汉人聚落为农业村落（村），通常每村 200-1500 人，围水源组织。墙院反映走西口带来的山西风格建筑。"></p>
+      </div>
+    </div>
+
+    <div class="cul-festivals" id="cul-festivals"></div>
+  </div>
+</section>
+
+<!-- MODULE 5 — SETTLEMENT -->
+<section id="settlement" style="background:linear-gradient(180deg,var(--night),var(--night-2),var(--night));">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 05 · <span data-en="Settlement Structure · 土贵乌拉镇" data-zh="聚落结构 · 土贵乌拉镇"></span></h4>
+      <h2><span data-en="A banner town, examined." data-zh="一个旗治镇，细究之。"></span></h2>
+      <p class="lede"><span data-en="Tuguiwula is the seat (旗治) of Chahar Right Front Banner — the largest population center in the banner, the rail and highway intersection, and the administrative hub. About 56,000 people live in the town proper. Its grid is small enough to walk across in 30 minutes; its history is large enough to fill a page." data-zh="土贵乌拉是察哈尔右翼前旗的旗治 —— 全旗最大的人口中心、铁路与公路交汇点、行政枢纽。镇区约 56,000 人。其网格小到 30 分钟可步行穿越；其历史大到足以填满一页。"></span></p>
+    </div>
+
+    <div class="set-stage">
+      <div class="set-grid">
+        <div class="set-town">
+          <div class="header">
+            <div class="ch">土贵乌拉</div>
+            <div class="py">Tǔguì Wūlā <small data-en="\"Tukhumin Ulaan\" (red mound) · Mongolian etymology" data-zh="\"图古日穆乌拉\" 之转，蒙古语意为「红色丘陵」"></small></div>
+          </div>
+          <p data-en="The town sits on a slight rise of <strong>red-tinted soil</strong> — the etymology hidden in plain sight. It became the banner seat in <strong>1954</strong> after the Republican-era restructuring of the Mongol banners. Today: rail station, bus terminus, weekly market, secondary schools, hospital, and the banner government compound." data-zh="镇坐落于一座轻微的<strong>红土丘陵</strong>之上 —— 字源就藏在脚下。<strong>1954 年</strong>民国期蒙旗重组后成为旗治。今日：火车站、客运站、周市、初高中、医院、旗政府院。"></p>
+          <p data-en="The street grid is <strong>oriented to the rail line</strong> (NE-SW), not cardinal directions — a tell-tale sign of railway-era town founding. The market square is at the rail-and-highway intersection. Most residential blocks are 1980s-2010s construction; a small Republican-era core remains north of the station." data-zh="街道网格<strong>沿铁路线方向</strong>（东北–西南），而非正南北 —— 是铁路时代建镇的明显标志。市场广场位于铁公交汇处。住宅区多为 1980s–2010s 建造；车站以北保留小片民国期老城核心。"></p>
+          <div class="set-stats">
+            <div class="set-stat"><div class="k" data-en="Population" data-zh="人口"></div><div class="v">~56,000</div></div>
+            <div class="set-stat"><div class="k" data-en="Area (built-up)" data-zh="建成区"></div><div class="v">~12 km²</div></div>
+            <div class="set-stat"><div class="k" data-en="Elevation" data-zh="海拔"></div><div class="v">1,395 m</div></div>
+            <div class="set-stat"><div class="k" data-en="Established as 旗治" data-zh="设旗治"></div><div class="v">1954</div></div>
+          </div>
+        </div>
+        <div class="set-side">
+          <h5 data-en="A typical day in the town" data-zh="镇上的一天"></h5>
+          <div class="sched">
+            <div class="sched-row"><div class="key">06:30</div><div class="val" data-en="Bakery & breakfast stalls open near the rail station" data-zh="车站附近的早餐摊与馒头铺开张"></div></div>
+            <div class="sched-row"><div class="key">07:30</div><div class="val" data-en="Schoolchildren walk; bus to Jining station departs" data-zh="学生上学；开往集宁站班车发车"></div></div>
+            <div class="sched-row"><div class="key">09:00</div><div class="val" data-en="Banner government offices open; market stalls peak" data-zh="旗政府开门；市场进入高峰"></div></div>
+            <div class="sched-row"><div class="key">12:00</div><div class="val" data-en="Two-hour lunch shutdown — quiet streets" data-zh="午休两小时 —— 街上安静"></div></div>
+            <div class="sched-row"><div class="key">14:30</div><div class="val" data-en="Reopen; afternoon trains arrive" data-zh="复工；午后列车到达"></div></div>
+            <div class="sched-row"><div class="key">17:30</div><div class="val" data-en="Squares fill: evening dance (广场舞), elders, kids" data-zh="广场聚人：广场舞、老人、孩童"></div></div>
+            <div class="sched-row"><div class="key">19:30</div><div class="val" data-en="Hot pot, mutton skewers, beer; markets close" data-zh="火锅、烤羊肉串、啤酒；市场打烊"></div></div>
+            <div class="sched-row"><div class="key">22:00</div><div class="val" data-en="Town quiet; only the rail-yard lights" data-zh="全镇寂静；只有铁路站场的灯"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 6 — ECONOMY -->
+<section id="economy">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 06 · <span data-en="Economy & Industry" data-zh="经济与产业"></span></h4>
+      <h2><span data-en="Five sectors. One wind." data-zh="五个产业。同一阵风。"></span></h2>
+      <p class="lede"><span data-en="Chahar Right Front Banner's economy mixes traditional animal husbandry, dryland agriculture, and a fast-growing wind-power sector that exploits the very wind that always made farming hard. GDP per capita is ~¥45,000 (~USD 6,200) — well below the national average but rising." data-zh="察右前旗经济融合传统畜牧、旱作农业，与一个快速增长的风电产业 —— 它正在开采那股使农业一直艰难的风。人均 GDP 约 ¥45,000（约 6,200 美元），远低于全国均值但正在上升。"></span></p>
+    </div>
+
+    <div class="eco-stage">
+      <div class="eco-bars" id="eco-bars"></div>
+      <div class="eco-grid" id="eco-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 7 — DAILY LIFE -->
+<section id="life" style="background:linear-gradient(180deg,var(--night),var(--night-2),var(--night));">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 07 · <span data-en="Daily Life Layer" data-zh="日常生活层"></span></h4>
+      <h2><span data-en="Food. Transport. School. Heat." data-zh="吃。行。学。暖。"></span></h2>
+      <p class="lede"><span data-en="Four windows on what living in Tuguiwula actually looks like — practical, bilingual, and free of the tourist gloss." data-zh="四个窗口，看真实的土贵乌拉生活 —— 实用、双语、无旅游粉饰。"></span></p>
+    </div>
+
+    <div class="life-stage" id="life-stage"></div>
+  </div>
+</section>
+
+<!-- MODULE 8 — CONNECTIVITY -->
+<section id="connectivity">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 08 · <span data-en="Regional Connectivity" data-zh="区域连接性"></span></h4>
+      <h2><span data-en="One rail line, three highways, eight connections." data-zh="一条铁路，三条高速，八条连接。"></span></h2>
+      <p class="lede"><span data-en="Tuguiwula is on the <strong>Jining-Erlianhot railway</strong> (集二线), the main rail link from Beijing to Mongolia. This single line is the reason the town exists in its current form. Plus the G7 (Beijing-Urumqi) expressway runs along the southern edge of the banner. Distance to nearest major city: Hohhot 230 km, Beijing 480 km." data-zh="土贵乌拉位于<strong>集二铁路</strong>（集宁—二连浩特）上 —— 北京通往蒙古国的主线。这条单一铁路是该镇成为当前形态的根本原因。京新（G7）高速从旗境南侧穿过。距最近大城市：呼和浩特 230 km，北京 480 km。"></span></p>
+    </div>
+
+    <div class="conn-stage">
+      <div class="conn-canvas">
+        <svg id="conn-svg" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+      <div class="conn-table" id="conn-table"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULE 9 — SIMULATION -->
+<section id="simulation" style="background:linear-gradient(180deg,var(--night),var(--night-2),var(--night));">
+  <div class="wrap">
+    <div class="section-head">
+      <h4>Module 09 · <span data-en="Regional Simulation Engine" data-zh="区域模拟引擎"></span></h4>
+      <h2><span data-en="What if the climate, the economy, or the rail line changed?" data-zh="如果气候、经济或铁路改变了呢？"></span></h2>
+      <p class="lede"><span data-en="Five sliders model first-order regional consequences. Move them to see how the banner reorganizes itself across population, herding capacity, energy production, water access, and out-migration. The model is heuristic, not predictive." data-zh="五个滑块模拟一阶区域后果。移动它们以查看旗如何在人口、载畜量、能源产出、水可及性、外迁率上重组。模型为启发式，不作精确预测。"></span></p>
+    </div>
+
+    <div class="sim-stage">
+      <div class="sim-controls" id="sim-controls"></div>
+      <div class="sim-effects" id="sim-effects"></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-quote">
+      <span data-en="To <span class='accent'>understand</span> a place,<br>walk it once and <span class='accent'>map it</span> forever." data-zh="要<span class='accent'>理解</span>一个地方，<br>步行一次，并<span class='accent'>制图</span>一辈子。"></span>
+    </p>
+    <p class="strip-attr" data-en="— Grassland Atlas · Coda" data-zh="— 草原图谱 · 尾声"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-col">
+      <div class="brand" style="margin-bottom:18px;">
+        <div class="brand-mark"><span></span></div>
+        <div class="brand-text">
+          <span data-en="Grassland Atlas" data-zh="草原图谱"></span>
+          <small data-en="Multi-scale regional system" data-zh="多尺度区域系统"></small>
+        </div>
+      </div>
+      <p style="color:var(--paper-2);font-size:.92rem;max-width:340px;line-height:1.7;font-style:italic;" data-en="A four-scale geographic intelligence platform: Inner Mongolia → Ulanqab → Chahar Right Front Banner → Tuguiwula. Part of the Psyverse portfolio." data-zh="四级地理智能平台：内蒙古 → 乌兰察布 → 察哈尔右翼前旗 → 土贵乌拉。Psyverse 矩阵的一员。"></p>
+    </div>
+    <div class="foot-col">
+      <h5 data-en="Modules" data-zh="模块"></h5>
+      <a href="#map" data-en="Multi-Scale Map" data-zh="多尺度地图"></a>
+      <a href="#geography" data-en="Geography" data-zh="地理"></a>
+      <a href="#history" data-en="History" data-zh="历史"></a>
+      <a href="#culture" data-en="Culture" data-zh="文化"></a>
+      <a href="#settlement" data-en="Settlement" data-zh="聚落"></a>
+      <a href="#economy" data-en="Economy" data-zh="经济"></a>
+    </div>
+    <div class="foot-col">
+      <h5 data-en="Sister Sites" data-zh="姊妹站点"></h5>
+      <a href="https://surnames.psyverse.fun" data-en="Surname Atlas" data-zh="中华姓氏图谱"></a>
+      <a href="https://ge.psyverse.fun" data-en="Ge Clan Atlas" data-zh="戈氏图谱"></a>
+      <a href="https://time.psyverse.fun" data-en="Time Machine" data-zh="时间机器"></a>
+      <a href="https://reality.psyverse.fun" data-en="Reality Explorer" data-zh="现实解析器"></a>
+    </div>
+    <div class="foot-col">
+      <h5 data-en="Network" data-zh="网络"></h5>
+      <a href="https://psyverse.fun">Psyverse</a>
+      <a href="https://github.com/gewenbo888/grassland-atlas">GitHub</a>
+      <a href="mailto:gewenbo84@gmail.com">Contact</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span>© 2026 Psyverse · Grassland Atlas · 草原图谱</span>
+    <span data-en="Built by Gewenbo (戈文波) · v1.0" data-zh="戈文波 制作 · v1.0"></span>
+  </div>
+</footer>
+
+<script>
+/* ════════════════════════ DATA ════════════════════════ */
+
+const SCALES = [
+  { id:'province', name:{en:'L1 · Inner Mongolia', zh:'L1 · 内蒙古'},
+    bounds:{w:1200, h:560},
+    desc:{en:'A 1.18 million km² autonomous region — the country\'s third-largest by area, stretched along China\'s northern frontier.', zh:'118 万平方公里的自治区 —— 全国面积第三大，沿中国北疆延展。'},
+    stats:[
+      {k:{en:'Area',zh:'面积'},v:'1,183,000 km²'},
+      {k:{en:'Population',zh:'人口'},v:'~24M'},
+      {k:{en:'Capital',zh:'首府'},v:{en:'Hohhot 呼和浩特',zh:'呼和浩特'}},
+      {k:{en:'Border',zh:'边境'},v:{en:'Mongolia, Russia',zh:'蒙古、俄罗斯'}},
+    ],
+    drawSpecific:`
+      <!-- IM rough outline -->
+      <path d="M 100 100 Q 200 80 350 100 Q 500 70 650 90 Q 800 80 950 110 Q 1080 130 1100 200 Q 1110 280 1080 350 Q 1050 420 980 460 Q 850 480 700 470 Q 550 460 400 440 Q 280 420 200 380 Q 120 340 100 270 Q 80 180 100 100 Z"
+        fill="rgba(154,170,106,.06)" stroke="#9aaa6a" stroke-width="1.6" stroke-dasharray="3 4"/>
+      <!-- Hohhot -->
+      <circle cx="640" cy="380" r="9" fill="#c79b53"/>
+      <text x="640" y="365" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="13" font-weight="500" data-en-x="呼和浩特">Hohhot · 呼和浩特</text>
+      <!-- Ulanqab (highlighted) -->
+      <rect x="685" y="350" width="80" height="60" fill="rgba(199,155,83,.14)" stroke="#c79b53" stroke-width="2"/>
+      <text x="725" y="345" text-anchor="middle" fill="#c79b53" font-family="IBM Plex Sans" font-size="13" font-weight="600">Ulanqab · 乌兰察布</text>
+      <!-- Beijing reference -->
+      <circle cx="850" cy="430" r="6" fill="#7d8aa3"/>
+      <text x="850" y="450" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="11">Beijing · 北京</text>
+      <!-- Mongolia border -->
+      <text x="500" y="80" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="11" font-style="italic">Mongolia border · 蒙古国界</text>
+      <!-- Yellow River curve -->
+      <path d="M 350 350 Q 500 400 600 380" fill="none" stroke="#7d8aa3" stroke-width="1.4" opacity=".6"/>
+      <text x="450" y="395" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="10" font-style="italic">Yellow River 黄河</text>` },
+
+  { id:'prefecture', name:{en:'L2 · Ulanqab Prefecture', zh:'L2 · 乌兰察布地级市'},
+    bounds:{w:1200, h:560},
+    desc:{en:'A wind-corridor city of 1.7M people. Grasslands in the north, dryland farms in the south, 11 county-level units total. Tuguiwula\'s banner is the central node.', zh:'170 万人的「风走廊之城」。北部草原、南部旱农、共 11 个县级单位。土贵乌拉所在旗位居中部。'},
+    stats:[
+      {k:{en:'Area',zh:'面积'},v:'~54,500 km²'},
+      {k:{en:'Population',zh:'人口'},v:'~1.7M'},
+      {k:{en:'County-level units',zh:'县级单位'},v:'11'},
+      {k:{en:'Distance to Beijing',zh:'距北京'},v:'~480 km'},
+    ],
+    drawSpecific:`
+      <!-- Ulanqab outline -->
+      <path d="M 200 100 L 1000 80 Q 1080 200 1050 360 L 950 480 L 250 460 Q 150 350 180 200 Z"
+        fill="rgba(154,170,106,.04)" stroke="#9aaa6a" stroke-width="1.6"/>
+      <!-- Yin Shan range (south) -->
+      <path d="M 250 460 Q 500 440 800 450 Q 950 460 1000 470" fill="none" stroke="#7d8aa3" stroke-width="3" opacity=".6"/>
+      <text x="600" y="490" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="11" font-style="italic">Yin Shan range · 阴山山脉</text>
+      <!-- 11 banners as dots -->
+      <g>
+        <circle cx="600" cy="280" r="14" fill="rgba(199,155,83,.25)" stroke="#c79b53" stroke-width="2.5"/>
+        <text x="600" y="285" text-anchor="middle" fill="#c79b53" font-family="IBM Plex Sans" font-size="11" font-weight="600">前旗</text>
+        <text x="600" y="252" text-anchor="middle" fill="#c79b53" font-family="IBM Plex Sans" font-size="9">Chahar Front Banner</text>
+      </g>
+      <circle cx="450" cy="280" r="9" fill="#9aaa6a" opacity=".6"/>
+      <text x="450" y="304" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="9">Jining 集宁</text>
+      <circle cx="320" cy="220" r="7" fill="#9aaa6a" opacity=".5"/><text x="320" y="240" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="9">Siziwang 四子王</text>
+      <circle cx="780" cy="240" r="7" fill="#9aaa6a" opacity=".5"/><text x="780" y="260" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="9">Middle Banner 中旗</text>
+      <circle cx="900" cy="280" r="7" fill="#9aaa6a" opacity=".5"/><text x="900" y="300" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="9">Rear Banner 后旗</text>
+      <circle cx="500" cy="380" r="7" fill="#9aaa6a" opacity=".5"/><text x="500" y="400" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="9">Liangcheng 凉城</text>
+      <!-- Rail line -->
+      <line x1="450" y1="280" x2="600" y2="280" stroke="#b15e3f" stroke-width="2" opacity=".7"/>
+      <line x1="600" y1="280" x2="780" y2="240" stroke="#b15e3f" stroke-width="2" opacity=".7"/>
+      <line x1="780" y1="240" x2="900" y2="180" stroke="#b15e3f" stroke-width="2" opacity=".5" stroke-dasharray="4 4"/>
+      <text x="900" y="170" text-anchor="middle" fill="#b15e3f" font-family="IBM Plex Sans" font-size="10" font-style="italic">→ Mongolia (Erlian) · 二连浩特</text>` },
+
+  { id:'banner', name:{en:'L3 · Chahar Right Front Banner', zh:'L3 · 察哈尔右翼前旗'},
+    bounds:{w:1200, h:560},
+    desc:{en:'A 2,734 km² county-level banner with 175,000 people. Mostly grassland and dryland farms. The seat is Tuguiwula. Two seasonal lakes; six other towns and townships.', zh:'2734 平方公里的县级旗，17.5 万人。多草原与旱地。旗治为土贵乌拉。两座季节性湖泊；其余 6 个镇乡。'},
+    stats:[
+      {k:{en:'Area',zh:'面积'},v:'~2,734 km²'},
+      {k:{en:'Population',zh:'人口'},v:'~175K'},
+      {k:{en:'Seat (旗治)',zh:'旗治'},v:{en:'Tuguiwula 土贵乌拉',zh:'土贵乌拉镇'}},
+      {k:{en:'Towns & townships',zh:'镇乡'},v:'7'},
+    ],
+    drawSpecific:`
+      <!-- Banner outline -->
+      <path d="M 250 120 Q 600 100 950 130 L 980 350 Q 850 460 600 470 Q 350 460 220 380 Q 200 250 250 120 Z"
+        fill="rgba(154,170,106,.04)" stroke="#9aaa6a" stroke-width="1.6"/>
+      <!-- Tuguiwula (seat, large) -->
+      <rect x="540" y="240" width="120" height="80" fill="rgba(199,155,83,.18)" stroke="#c79b53" stroke-width="2.5"/>
+      <text x="600" y="280" text-anchor="middle" fill="#c79b53" font-family="Noto Serif SC" font-size="20" font-weight="700">土贵乌拉</text>
+      <text x="600" y="305" text-anchor="middle" fill="#c79b53" font-family="EB Garamond" font-style="italic" font-size="13">Tuguiwula · 旗治</text>
+      <!-- Other towns -->
+      <circle cx="350" cy="260" r="8" fill="#9aaa6a"/><text x="350" y="280" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Pingdiquan 平地泉</text>
+      <circle cx="800" cy="240" r="7" fill="#9aaa6a"/><text x="800" y="260" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Huangqi 黄旗海镇</text>
+      <circle cx="450" cy="380" r="6" fill="#9aaa6a"/><text x="450" y="400" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Lichengcun 礼成村</text>
+      <circle cx="700" cy="400" r="6" fill="#9aaa6a"/><text x="700" y="420" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Sanqi 三岔口</text>
+      <circle cx="280" cy="180" r="6" fill="#9aaa6a"/><text x="280" y="200" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Bayanhua 巴音花</text>
+      <circle cx="900" cy="350" r="6" fill="#9aaa6a"/><text x="900" y="370" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="10">Lurang 庐润</text>
+      <!-- Huangqi Lake -->
+      <ellipse cx="780" cy="280" rx="30" ry="14" fill="rgba(124,138,163,.4)"/>
+      <text x="780" y="305" text-anchor="middle" fill="#7d8aa3" font-family="EB Garamond" font-size="11" font-style="italic">Huangqi Hai · 黄旗海</text>
+      <!-- Rail line through Tuguiwula -->
+      <line x1="200" y1="270" x2="540" y2="280" stroke="#b15e3f" stroke-width="3"/>
+      <line x1="660" y1="280" x2="950" y2="240" stroke="#b15e3f" stroke-width="3"/>
+      <text x="180" y="265" text-anchor="end" fill="#b15e3f" font-family="IBM Plex Sans" font-size="10">← Jining</text>
+      <text x="970" y="240" fill="#b15e3f" font-family="IBM Plex Sans" font-size="10">→ Erlian</text>
+      <!-- G7 highway -->
+      <line x1="200" y1="430" x2="980" y2="380" stroke="#7d8aa3" stroke-width="2.5" stroke-dasharray="6 3"/>
+      <text x="600" y="450" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="11" font-style="italic">G7 Beijing-Urumqi Expressway · 京新高速</text>` },
+
+  { id:'town', name:{en:'L4 · Tuguiwula Town', zh:'L4 · 土贵乌拉镇'},
+    bounds:{w:1200, h:560},
+    desc:{en:'A 12 km² built-up area on a low rise. Grid streets oriented to the rail line. Population ~56,000 across 18 administrative urban districts (社区) plus 22 surrounding villages.', zh:'12 km² 建成区，建于低丘之上。街道沿铁路走向。人口约 56,000，分为 18 个城市社区与 22 个周边自然村。'},
+    stats:[
+      {k:{en:'Built-up area',zh:'建成区'},v:'~12 km²'},
+      {k:{en:'Population',zh:'人口'},v:'~56K'},
+      {k:{en:'Elevation',zh:'海拔'},v:'1,395 m'},
+      {k:{en:'Rail station',zh:'火车站'},v:'1955'},
+    ],
+    drawSpecific:`
+      <!-- Town built-up area -->
+      <rect x="350" y="180" width="500" height="280" fill="rgba(199,155,83,.06)" stroke="#c79b53" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <!-- Rail line (NE-SW orientation) -->
+      <line x1="200" y1="380" x2="1000" y2="200" stroke="#b15e3f" stroke-width="4"/>
+      <text x="200" y="400" fill="#b15e3f" font-family="IBM Plex Sans" font-size="12" font-style="italic">Jining-Erlian Railway · 集二铁路</text>
+      <!-- Rail station -->
+      <rect x="510" y="280" width="40" height="20" fill="#b15e3f"/>
+      <text x="530" y="275" text-anchor="middle" fill="#b15e3f" font-family="IBM Plex Sans" font-size="11" font-weight="600">Station 站</text>
+      <!-- Grid streets parallel to rail -->
+      <g stroke="rgba(238,223,182,.3)" stroke-width="1" fill="none">
+        <line x1="380" y1="350" x2="930" y2="225"/>
+        <line x1="400" y1="400" x2="950" y2="275"/>
+        <line x1="420" y1="450" x2="970" y2="320"/>
+        <!-- Cross streets perp to rail -->
+        <line x1="450" y1="320" x2="500" y2="420"/>
+        <line x1="550" y1="280" x2="600" y2="380"/>
+        <line x1="650" y1="240" x2="700" y2="340"/>
+        <line x1="750" y1="200" x2="800" y2="300"/>
+      </g>
+      <!-- Banner government compound -->
+      <rect x="600" y="320" width="36" height="24" fill="rgba(154,170,106,.5)" stroke="#9aaa6a" stroke-width="1.5"/>
+      <text x="618" y="362" text-anchor="middle" fill="#9aaa6a" font-family="IBM Plex Sans" font-size="10">Banner Govt 旗政府</text>
+      <!-- Market square -->
+      <circle cx="540" cy="320" r="12" fill="rgba(199,155,83,.4)" stroke="#c79b53" stroke-width="1.5"/>
+      <text x="540" y="345" text-anchor="middle" fill="#c79b53" font-family="IBM Plex Sans" font-size="10">Market 市场</text>
+      <!-- Hospital -->
+      <rect x="700" y="280" width="22" height="22" fill="rgba(177,94,63,.4)" stroke="#b15e3f" stroke-width="1.5"/>
+      <text x="711" y="270" text-anchor="middle" fill="#b15e3f" font-family="IBM Plex Sans" font-size="10">Hosp. 医院</text>
+      <!-- Schools -->
+      <rect x="450" y="240" width="22" height="22" fill="rgba(125,138,163,.4)" stroke="#7d8aa3" stroke-width="1.5"/>
+      <text x="461" y="232" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="10">School 中学</text>
+      <rect x="780" y="380" width="22" height="22" fill="rgba(125,138,163,.4)" stroke="#7d8aa3" stroke-width="1.5"/>
+      <text x="791" y="370" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="10">小学</text>
+      <!-- Residential blocks (multiple) -->
+      <g fill="rgba(238,223,182,.08)" stroke="rgba(238,223,182,.2)" stroke-width="1">
+        <rect x="430" y="340" width="40" height="36"/><rect x="500" y="370" width="40" height="36"/>
+        <rect x="640" y="240" width="36" height="32"/><rect x="700" y="220" width="36" height="32"/>
+        <rect x="380" y="280" width="36" height="32"/><rect x="800" y="320" width="36" height="32"/>
+      </g>
+      <!-- Highway -->
+      <line x1="350" y1="460" x2="850" y2="460" stroke="#7d8aa3" stroke-width="2" stroke-dasharray="6 3"/>
+      <text x="600" y="478" text-anchor="middle" fill="#7d8aa3" font-family="IBM Plex Sans" font-size="11" font-style="italic">G6 / G7 expressway access · 京藏 / 京新</text>
+      <!-- Compass -->
+      <g transform="translate(1080,80)">
+        <circle r="22" fill="rgba(28,29,20,.6)" stroke="rgba(238,223,182,.3)" stroke-width="1"/>
+        <text y="-8" text-anchor="middle" fill="#9aaa6a" font-family="IBM Plex Sans" font-size="10">N</text>
+        <text y="14" text-anchor="middle" fill="rgba(238,223,182,.5)" font-family="IBM Plex Sans" font-size="9">↑</text>
+      </g>` }
+];
+
+const MAP_LAYERS = [
+  { id:'terrain', en:'Terrain', zh:'地形' },
+  { id:'settlements', en:'Settlements', zh:'聚落' },
+  { id:'infra', en:'Infrastructure', zh:'基础设施' },
+];
+
+const CLIMATE = [
+  { m:{en:'Jan',zh:'1 月'}, t:'-13°C', p:1 },
+  { m:{en:'Feb',zh:'2 月'}, t:'-9°C', p:3 },
+  { m:{en:'Mar',zh:'3 月'}, t:'-1°C', p:8 },
+  { m:{en:'Apr',zh:'4 月'}, t:'+8°C', p:18 },
+  { m:{en:'May',zh:'5 月'}, t:'+15°C', p:35 },
+  { m:{en:'Jun',zh:'6 月'}, t:'+19°C', p:65 },
+  { m:{en:'Jul',zh:'7 月'}, t:'+21°C', p:90 },
+  { m:{en:'Aug',zh:'8 月'}, t:'+19°C', p:75 },
+  { m:{en:'Sep',zh:'9 月'}, t:'+13°C', p:30 },
+  { m:{en:'Oct',zh:'10 月'}, t:'+5°C', p:12 },
+  { m:{en:'Nov',zh:'11 月'}, t:'-4°C', p:5 },
+  { m:{en:'Dec',zh:'12 月'}, t:'-11°C', p:2 },
+];
+
+const HISTORY = [
+  { t:'~3rd c BCE', tZh:'前 3 世纪', name:{en:'Xiongnu steppe state', zh:'匈奴草原国家'},
+    desc:{en:'The Ulanqab area is part of the <strong>Xiongnu</strong> nomadic confederation\'s southern grazing zone — the very steppe whose raids triggered the construction of the early Great Wall some 60 km south of present-day Tuguiwula.', zh:'乌兰察布地区是<strong>匈奴</strong>游牧联盟的南部牧区 —— 正是其袭扰促成了今土贵乌拉以南约 60 公里处早期长城的修建。'},
+    impact:{en:['Steppe contact zone established','Wall-building begins to its south','First written references in Han records'], zh:['草原接触带形成','其南开始筑长城','首次见于汉代文献']} },
+  { t:'1271-1368', tZh:'1271-1368', name:{en:'Yuan dynasty (Mongol Empire)', zh:'元朝（蒙古帝国）'},
+    desc:{en:'Under the Yuan, Inner Mongolia is the <strong>imperial heartland</strong> — Khanbaliq (Beijing) sits to the south, Karakorum to the north. The Ulanqab region is criss-crossed by Mongol post stations (站) connecting the steppe capital to the agricultural south.', zh:'元代时，内蒙古为<strong>帝国腹地</strong> —— 大都（北京）在南，哈拉和林在北。乌兰察布地区被驿站网络贯穿，连接草原都城与农耕南方。'},
+    impact:{en:['Steppe-farm dichotomy weakens temporarily','Post-station network established','Tibetan Buddhism arrives'], zh:['草原-农耕二分暂时弱化','驿站网络建立','藏传佛教传入']} },
+  { t:'1635', tZh:'1635', name:{en:'Chahar surrender to Manchu', zh:'察哈尔归附满洲'},
+    desc:{en:'Ligdan Khan, the last Great Khan of the Northern Yuan, dies in 1634. His son Ejei surrenders to the Manchu in 1635, and the <strong>Chahar Mongols</strong> become the first Mongol group fully integrated into the rising Qing state. The eventual Qing banner system grows from this submission.', zh:'北元最后大汗林丹汗 1634 年去世。其子额哲 1635 年向满洲投降，<strong>察哈尔蒙古</strong>成为首个被完全纳入新兴清国的蒙古部群。后来的盟旗制度由此发端。'},
+    impact:{en:['Beginning of the banner system','Chahar Mongol identity formalized','Strategic shift: northern frontier solved'], zh:['盟旗制度发端','察哈尔蒙古身份制度化','战略转折：北疆问题解决']} },
+  { t:'1675', tZh:'1675', name:{en:'Eight Banners of Chahar (察哈尔八旗)', zh:'察哈尔八旗'},
+    desc:{en:'The Kangxi Emperor reorganizes the Chahar into <strong>eight banners</strong> divided into "left wing" and "right wing" — explicitly Manchu-style military-administrative units. The <em>"Right Wing Front Banner" (察哈尔右翼前旗)</em> dates from this organization, though boundaries shifted multiple times.', zh:'康熙帝将察哈尔重组为<strong>八旗</strong>，分左右两翼 —— 明确的满洲式军政单位。<em>「察哈尔右翼前旗」</em>始于此次组织，虽边界历经数次变动。'},
+    impact:{en:['Banner = administrative unit (lasts 350 years)','Right Wing / Left Wing distinction','Direct Qing administration begins'], zh:['旗 = 行政单位（延续 350 年）','左右翼之分','清代直接管辖开始']} },
+  { t:'17-19 c', tZh:'17-19 世纪', name:{en:'走西口 (Crossing the Western Pass)', zh:'走西口'},
+    desc:{en:'Drought, floods, and population pressure in Shanxi and Shaanxi drive a centuries-long migration of Han farmers north through the Great Wall passes into the southern Inner Mongolian grasslands. By 1900, Han <em>massively</em> outnumber Mongols across most of southern Inner Mongolia, including the future Ulanqab.', zh:'山西、陕西的旱涝与人口压力推动了一场跨越数世纪的汉族农民北迁 —— 经长城关隘进入内蒙古南部草原。至 1900 年，汉人在内蒙古南部多数地区<em>大幅</em>超过蒙古族，包括后来的乌兰察布。'},
+    impact:{en:['Demographic inversion: Han > Mongol locally','Steppe → fields conversion begins','Jin dialect arrives & spreads'], zh:['人口反转：汉 > 蒙（局部）','草原 → 农田转换开始','晋语方言迁入扩散']} },
+  { t:'1947', tZh:'1947', name:{en:'Inner Mongolia Autonomous Region', zh:'内蒙古自治区成立'},
+    desc:{en:'Two years before the PRC itself is founded, the CCP establishes the <strong>Inner Mongolia Autonomous Region</strong> at Wangyemiao (now Ulanhot) on May 1, 1947 — the first provincial-level minority autonomous region. Sets the legal framework for all subsequent Inner Mongolian administration.', zh:'1947 年 5 月 1 日，比中华人民共和国本身成立早两年，中共在王爷庙（今乌兰浩特）成立<strong>内蒙古自治区</strong> —— 中国第一个省级少数民族自治区。为此后所有内蒙古行政奠定法律框架。'},
+    impact:{en:['Provincial-level autonomy established','Bilingual administration formalized','Mongol-language education protected'], zh:['省级自治建立','双语行政制度化','蒙语教育受保护']} },
+  { t:'1954', tZh:'1954', name:{en:'Tuguiwula becomes banner seat', zh:'土贵乌拉设为旗治'},
+    desc:{en:'In a series of administrative reorganizations after the founding of the PRC, <strong>Tuguiwula is designated the seat (旗治) of the Chahar Right Front Banner</strong> in 1954. The town\'s rail-station-centric grid is laid out in the following decade.', zh:'中华人民共和国成立后的一系列行政整理中，1954 年<strong>土贵乌拉被定为察哈尔右翼前旗的旗治</strong>。镇区以铁路站为中心的网格在随后十年内铺设。'},
+    impact:{en:['Town-form crystallizes around the rail station','Population grows from ~5K to ~30K by 1980','Banner government compound built'], zh:['镇形以火车站为中心定型','至 1980 年人口由约 5000 增至约 3 万','旗政府院建成']} },
+  { t:'2000-now', tZh:'2000-至今', name:{en:'Wind power era', zh:'风电时代'},
+    desc:{en:'Beginning around 2000, Ulanqab\'s wind corridor becomes a <strong>major Chinese wind-power generation zone</strong>. By 2020, the prefecture hosts thousands of wind turbines and is connected to the national grid via UHV transmission. The wind that always made farming hard now exports electricity to Beijing.', zh:'约 2000 年起，乌兰察布的风走廊成为<strong>中国主要风电生产区</strong>之一。至 2020 年，全市拥有数千座风机，通过特高压输电与全国电网相连。一直让农业艰难的那阵风，如今向北京输出电力。'},
+    impact:{en:['Wind power becomes ~12% of GDP','Coal/agriculture share drops','Outmigration slows in some banners'], zh:['风电占 GDP 约 12%','煤炭与农业份额下降','部分旗外迁放缓']} },
+];
+
+const FESTIVALS = [
+  { zh:'那达慕', en:{en:'Naadam', zh:'那达慕大会'}, when:{en:'Summer (Jul-Aug)', zh:'夏季（7-8 月）'},
+    desc:{en:'The annual Mongolian "three games of men": archery, wrestling, and horse racing. Held across Inner Mongolia at multiple scales — from local sumu festivals to the prefectural-level event in Hohhot.', zh:'蒙古族年度「男儿三艺」：射箭、摔跤、赛马。内蒙古各级举办 —— 从地方苏木节庆到呼和浩特的市级盛会。'} },
+  { zh:'春节', en:{en:'Spring Festival', zh:'春节'}, when:{en:'Lunar New Year (Jan-Feb)', zh:'农历新年（1-2 月）'},
+    desc:{en:'The dominant family festival for the Han majority. In Tuguiwula, fireworks officially restricted but unofficially everywhere; mutton hot pot is the signature meal. Migrant workers return to villages.', zh:'汉族主体的家庭节庆。土贵乌拉烟花官方限制但实则随处；羊肉火锅为招牌餐。外出务工者返村。'} },
+  { zh:'白节', en:{en:'White Month (Tsagaan Sar)', zh:'白节（蒙古新年）'}, when:{en:'Lunar New Year (Mongol calendar)', zh:'蒙古新年（同农历正月初一）'},
+    desc:{en:'Mongolian Lunar New Year — coincides with the Han Spring Festival but distinct in ritual: white foods (dairy products) symbolize purity and abundance; visits to elders; horse racing weather permitting.', zh:'蒙古族农历新年 —— 与汉族春节重合，但仪式有别：白色食物（乳制品）象征纯洁与丰盈；拜访长者；天气许可时赛马。'} },
+];
+
+const SECTORS = [
+  { cls:'an', name:{en:'Animal husbandry', zh:'畜牧业'}, sub:{en:'sheep, cattle, dairy', zh:'羊、牛、乳制品'}, pct:23 },
+  { cls:'ag', name:{en:'Agriculture (dryland)', zh:'旱作农业'}, sub:{en:'potato, oats, sunflower', zh:'马铃薯、燕麦、葵花'}, pct:19 },
+  { cls:'en', name:{en:'Energy (wind+solar)', zh:'能源（风+光）'}, sub:{en:'wind farms, UHV grid', zh:'风电场、特高压'}, pct:21 },
+  { cls:'man', name:{en:'Manufacturing', zh:'制造业'}, sub:{en:'food processing, lt. industry', zh:'食品加工、轻工'}, pct:14 },
+  { cls:'svc', name:{en:'Services & retail', zh:'服务与零售'}, sub:{en:'retail, finance, govt', zh:'零售、金融、政府'}, pct:23 },
+];
+
+const ECO_CARDS = [
+  { cls:'h', lbl:{en:'HUSBANDRY · LEAD SECTOR', zh:'畜牧 · 主导产业'}, name:{en:'Sheep, cattle, dairy', zh:'羊、牛、乳业'},
+    desc:{en:'~1.2 million livestock units in Chahar Right Front Banner. Mongolian breeds (small-tail Han sheep, local cattle) dominate. Dairy is the largest single value chain — Yili and Mengniu both source significantly from Ulanqab.', zh:'察右前旗约 120 万头标准畜单位。本地蒙古种（小尾寒羊、本地牛）为主。乳业为最大单一价值链 —— 伊利、蒙牛均大量从乌兰察布采购。'},
+    figure:'~¥4.2B output / yr' },
+  { cls:'a', lbl:{en:'AGRICULTURE · DRYLAND', zh:'农业 · 旱作'}, name:{en:'Potato capital of China', zh:'中国马铃薯之都'},
+    desc:{en:'Ulanqab is officially designated the "potato capital of China" — cool nights, dry days, sandy loam are ideal for high-quality tuber production. The whole prefecture produces ~5 million tons annually; Chahar Right Front contributes meaningfully. Plus oats, sunflower, buckwheat.', zh:'乌兰察布被官方授予「中国薯都」 —— 凉夜干日、沙壤土，是优质块茎的理想条件。全市年产约 500 万吨；察右前旗贡献可观。另产燕麦、葵花、荞麦。'},
+    figure:'~¥3.5B output / yr' },
+  { cls:'e', lbl:{en:'ENERGY · WIND + SOLAR', zh:'能源 · 风光并举'}, name:{en:'A wind-corridor industry', zh:'一座风走廊产业'},
+    desc:{en:'~3.2 GW of installed wind capacity in the prefecture; expanding to ~8 GW by 2030. The wind that always made farming hard now exports electricity to Beijing via UHV transmission. Modest but growing solar additions on south-facing slopes.', zh:'全市装机风电约 3.2 GW；2030 年扩至约 8 GW。一直让农业艰难的那阵风，如今经特高压向北京送电。南向坡面光伏小幅但持续增加。'},
+    figure:'~¥4.8B output / yr · 12% of regional GDP' },
+];
+
+const LIFE = [
+  { icon:{en:'01 · FOOD', zh:'01 · 饮食'}, name:{en:'Mutton + potato + tea', zh:'羊肉 + 土豆 + 砖茶'},
+    desc:{en:'Mutton dominates — roasted, hot-pot, dumplings, hand-pulled noodles. Potato is the second staple (it grows here at scale). Brick tea with milk and salt is the signature non-alcoholic drink — a Mongolian inheritance.', zh:'羊肉为主 —— 烤、火锅、饺子、手扯面。土豆为第二主食（本地大规模种植）。咸奶茶（砖茶 + 鲜奶 + 盐）是招牌非酒饮 —— 蒙古族遗产。'},
+    examples:{en:'<b>Signature dishes:</b> 涮羊肉 mutton hot pot · 莜面 oat noodles · 烧麦 mutton siu mai · 焙子 baked flatbread', zh:'<b>代表菜：</b>涮羊肉 · 莜面 · 烧麦 · 焙子'} },
+  { icon:{en:'02 · TRANSPORT', zh:'02 · 出行'}, name:{en:'Trains and a single highway', zh:'火车与一条主路'},
+    desc:{en:'5-6 daily passenger trains stop at Tuguiwula on the Jining-Erlian line. Bus service reaches all 7 banner towns. Private cars dominate longer trips. Walking is feasible across the entire town in 30 minutes.', zh:'集二线每日 5-6 趟客运列车停靠土贵乌拉。公共汽车通达全旗 7 镇乡。私家车主导长途。步行 30 分钟可穿越全镇。'},
+    examples:{en:'<b>Major routes:</b> → Jining 50 km · → Hohhot 230 km · → Beijing 480 km · → Erlian (Mongol border) 320 km', zh:'<b>主要路线：</b>→ 集宁 50 km · → 呼和浩特 230 km · → 北京 480 km · → 二连浩特 320 km'} },
+  { icon:{en:'03 · SCHOOL', zh:'03 · 教育'}, name:{en:'Banner-level system', zh:'旗级体系'},
+    desc:{en:'~12 primary schools and 3 secondary schools serve the banner; Tuguiwula hosts 3 of them. One Mongolian-medium school. Most ambitious students leave at 15 for senior secondary in Hohhot or Jining; university bound for Hohhot, Beijing, or coastal cities.', zh:'全旗约 12 所小学、3 所中学；土贵乌拉占其中 3 所。一所蒙语授课学校。多数志向较高的学生 15 岁离镇赴呼和浩特或集宁就读高中；大学多入呼市、北京或沿海城市。'},
+    examples:{en:'<b>Out-migration:</b> ~30% of high school graduates do not return after university', zh:'<b>外迁：</b>约 30% 高中毕业生大学后不返乡'} },
+  { icon:{en:'04 · WINTER HEAT', zh:'04 · 冬季供暖'}, name:{en:'October to April, central heat', zh:'十月至四月，集中供暖'},
+    desc:{en:'Tuguiwula is on the official "central heating zone" north of the Qinling-Huaihe line. The municipal coal/gas heating plant runs from Oct 15 to Apr 15. Indoor temperatures legally must be ≥ 18°C. Coal smoke is being phased out in favor of cleaner sources.', zh:'土贵乌拉位于秦岭—淮河线以北的官方「集中供暖区」。市政燃煤/燃气热站 10 月 15 日 — 4 月 15 日运行。室内温度法定不低于 18°C。燃煤烟尘正逐步被清洁能源取代。'},
+    examples:{en:'<b>Energy mix:</b> 60% coal, 25% gas, 15% electric (rising) · <b>cost:</b> ~¥30/m²/season', zh:'<b>能源构成：</b>60% 煤、25% 燃气、15% 电（上升中） · <b>成本：</b>约 ¥30/㎡/采暖季'} },
+];
+
+const CITIES = [
+  { name:{en:'Jining 集宁', zh:'集宁'}, dist:'50 km', mode:{en:'Rail (1 hr)', zh:'铁路 1 小时'}, role:{en:'Prefecture seat', zh:'地级市'} },
+  { name:{en:'Hohhot 呼和浩特', zh:'呼和浩特'}, dist:'230 km', mode:{en:'Rail+road (3 hr)', zh:'铁路+公路 3 小时'}, role:{en:'Provincial capital', zh:'自治区首府'} },
+  { name:{en:'Datong 大同', zh:'大同'}, dist:'120 km', mode:{en:'Road (2 hr)', zh:'公路 2 小时'}, role:{en:'Major city', zh:'大城市'} },
+  { name:{en:'Beijing 北京', zh:'北京'}, dist:'480 km', mode:{en:'Rail (5 hr)', zh:'铁路 5 小时'}, role:{en:'National capital', zh:'国家首都'} },
+  { name:{en:'Baotou 包头', zh:'包头'}, dist:'380 km', mode:{en:'Rail (5 hr)', zh:'铁路 5 小时'}, role:{en:'Industrial city', zh:'工业城市'} },
+  { name:{en:'Erlianhot 二连浩特', zh:'二连浩特'}, dist:'320 km', mode:{en:'Rail (4 hr)', zh:'铁路 4 小时'}, role:{en:'Mongolia border port', zh:'蒙古国口岸'} },
+];
+
+const SIM_VARS = [
+  { id:'climate', label:{en:'Annual rainfall (mm)', zh:'年降水量 (毫米)'}, min:200, max:550, init:350, step:25 },
+  { id:'temp', label:{en:'Annual mean temp (°C)', zh:'年均气温 (°C)'}, min:0, max:8, init:3.5, step:0.5 },
+  { id:'wind', label:{en:'Wind capacity (GW)', zh:'风电装机 (GW)'}, min:1, max:15, init:3.2, step:0.5 },
+  { id:'rail', label:{en:'Daily train pairs', zh:'每日客运列车对数'}, min:0, max:20, init:6, step:1 },
+  { id:'invest', label:{en:'Annual capital infusion (¥B)', zh:'年度资本投入 (亿元)'}, min:0, max:50, init:8, step:1 },
+];
+
+/* ════════════════════════ I18N ════════════════════════ */
+function isZh(){ return document.body.classList.contains('zh'); }
+function applyLang(lang){
+  document.body.classList.toggle('zh', lang==='zh');
+  localStorage.setItem('ga-lang', lang);
+  document.documentElement.lang = lang==='zh' ? 'zh-CN' : 'en';
+  document.getElementById('lang-btn').textContent = lang==='zh' ? 'EN' : '中文';
+  document.querySelectorAll('[data-en], [data-zh]').forEach(el=>{
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') return;
+    const txt = lang==='zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+    if (txt != null) el.innerHTML = txt;
+  });
+  renderMapTabs(); renderMap(curScale); renderClimate(); renderHistory(); renderFestivals(); renderEco(); renderLife(); renderConn(); renderSimControls(); renderSimEffects();
+}
+document.getElementById('lang-btn').onclick=()=>applyLang(isZh()?'en':'zh');
+
+/* ════════════════════════ MODULE 1 — MAP ════════════════════════ */
+let curScale = 0;
+function renderMapTabs(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('map-tabs').innerHTML = SCALES.map((s,i)=>
+    `<button class="map-tab ${i===curScale?'active':''}" data-i="${i}">${s.name[lang]}</button>`).join('');
+  document.querySelectorAll('.map-tab').forEach(b=>b.onclick=()=>{ curScale=+b.dataset.i; renderMapTabs(); renderMap(curScale); });
+  // Layer controls
+  document.getElementById('map-layers').innerHTML = MAP_LAYERS.map(l=>
+    `<button class="map-layer active" data-id="${l.id}">${l[lang]}</button>`).join('');
+  document.querySelectorAll('.map-layer').forEach(b=>b.onclick=()=>b.classList.toggle('active'));
+}
+function renderMap(idx){
+  const lang = isZh()?'zh':'en';
+  const s = SCALES[idx];
+  document.getElementById('map-svg').innerHTML = s.drawSpecific;
+  document.getElementById('map-info').innerHTML = `
+    <div class="map-stat" style="grid-column:span 4;background:transparent;border:none;padding-bottom:0;color:var(--paper-2);font-style:italic;font-size:.94rem;line-height:1.6;">${s.desc[lang]}</div>
+    ${s.stats.map(st=>`<div class="map-stat"><div class="k">${st.k[lang]}</div><div class="v">${typeof st.v === 'object' ? st.v[lang] : st.v}</div></div>`).join('')}
+  `;
+}
+
+/* ════════════════════════ MODULE 2 — CLIMATE ════════════════════════ */
+function renderClimate(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('climate-chart').innerHTML = CLIMATE.map(c=>
+    `<div class="climate-row">
+      <span class="month">${c.m[lang]}</span>
+      <span class="temp">${c.t}</span>
+      <span class="precip">${c.p}mm</span>
+    </div>`).join('');
+}
+
+/* ════════════════════════ MODULE 3 — HISTORY ════════════════════════ */
+let curHist = 0;
+function renderHistory(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('hist-axis').innerHTML = HISTORY.map((e,i)=>{
+    const pct = (i/(HISTORY.length-1))*100;
+    return `<div class="hist-event ${i===curHist?'active':''}" data-i="${i}" style="left:${pct}%;">
+      <div class="hist-event-label">${lang==='zh'?e.tZh:e.t.split('-')[0]}<small>${e.name[lang].split('·')[0].split('(')[0].trim().slice(0,12)}</small></div>
+    </div>`;
+  }).join('');
+  document.querySelectorAll('.hist-event').forEach(d=>d.onclick=()=>{ curHist=+d.dataset.i; renderHistory(); });
+  const e = HISTORY[curHist];
+  document.getElementById('hist-detail').innerHTML = `
+    <div>
+      <div class="when">${lang==='zh'?e.tZh:e.t}</div>
+      <div class="title">${e.name[lang]}</div>
+    </div>
+    <div class="body">
+      <p>${e.desc[lang]}</p>
+      <h5>${lang==='zh'?'对地区的影响':'Impact on the region'}</h5>
+      <ul>${(lang==='zh'?e.impact.zh:e.impact.en).map(x=>`<li>${x}</li>`).join('')}</ul>
+    </div>
+  `;
+}
+
+/* ════════════════════════ MODULE 4 — FESTIVALS ════════════════════════ */
+function renderFestivals(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('cul-festivals').innerHTML = FESTIVALS.map(f=>`
+    <div class="fest-card">
+      <div class="name-zh">${f.zh}</div>
+      <div class="name-en">${f.en[lang]}</div>
+      <div class="when">${f.when[lang]}</div>
+      <p>${f.desc[lang]}</p>
+    </div>
+  `).join('');
+}
+
+/* ════════════════════════ MODULE 6 — ECONOMY ════════════════════════ */
+function renderEco(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('eco-bars').innerHTML = SECTORS.map(s=>`
+    <div class="eco-bar ${s.cls}">
+      <div class="sector">${s.name[lang]}<small>${s.sub[lang]}</small></div>
+      <div class="meter"><div style="width:${(s.pct/25)*100}%;"></div></div>
+      <div class="pct">${s.pct}%</div>
+    </div>
+  `).join('');
+  document.getElementById('eco-grid').innerHTML = ECO_CARDS.map(c=>`
+    <div class="eco-card ${c.cls}">
+      <div class="lbl">${c.lbl[lang]}</div>
+      <h5>${c.name[lang]}</h5>
+      <p>${c.desc[lang]}</p>
+      <div class="figure">${c.figure}</div>
+    </div>
+  `).join('');
+}
+
+/* ════════════════════════ MODULE 7 — LIFE ════════════════════════ */
+function renderLife(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('life-stage').innerHTML = LIFE.map(l=>`
+    <div class="life-card">
+      <div class="icon">${l.icon[lang]}</div>
+      <h5>${l.name[lang]}</h5>
+      <p>${l.desc[lang]}</p>
+      <div class="examples">${l.examples[lang]}</div>
+    </div>
+  `).join('');
+}
+
+/* ════════════════════════ MODULE 8 — CONNECTIVITY ════════════════════════ */
+function renderConn(){
+  const lang = isZh()?'zh':'en';
+  // SVG: Tuguiwula at center, lines to cities
+  const cx = 600, cy = 240;
+  const cities = [
+    {x:520,y:240, name:{en:'Jining',zh:'集宁'}, dist:'50km', dir:'W'},
+    {x:300,y:340, name:{en:'Hohhot',zh:'呼和浩特'}, dist:'230km', dir:'WSW'},
+    {x:850,y:140, name:{en:'Erlian',zh:'二连浩特'}, dist:'320km', dir:'NE'},
+    {x:1000,y:340, name:{en:'Beijing',zh:'北京'}, dist:'480km', dir:'ESE'},
+    {x:200,y:400, name:{en:'Baotou',zh:'包头'}, dist:'380km', dir:'WSW'},
+    {x:780,y:400, name:{en:'Datong',zh:'大同'}, dist:'120km', dir:'SE'},
+  ];
+  let html = `<g>`;
+  cities.forEach(c=>{
+    const isRail = ['Jining','Erlian','Beijing','Baotou'].includes(c.name.en);
+    const stroke = isRail ? '#b15e3f' : '#7d8aa3';
+    const sw = isRail ? 2.5 : 1.8;
+    const dasharray = isRail ? '' : '6 4';
+    html += `<line x1="${cx}" y1="${cy}" x2="${c.x}" y2="${c.y}" stroke="${stroke}" stroke-width="${sw}" ${dasharray?'stroke-dasharray="'+dasharray+'"':''} opacity=".75"/>`;
+    html += `<circle cx="${c.x}" cy="${c.y}" r="9" fill="${stroke}" opacity=".7"/>`;
+    html += `<text x="${c.x}" y="${c.y-15}" text-anchor="middle" fill="#eedfb6" font-family="IBM Plex Sans" font-size="13" font-weight="500">${c.name[lang]}</text>`;
+    html += `<text x="${c.x}" y="${c.y+24}" text-anchor="middle" fill="${stroke}" font-family="JetBrains Mono" font-size="11">${c.dist}</text>`;
+  });
+  // Center
+  html += `<circle cx="${cx}" cy="${cy}" r="20" fill="#c79b53" stroke="#eedfb6" stroke-width="2"/>`;
+  html += `<text x="${cx}" y="${cy+5}" text-anchor="middle" fill="#1c1d14" font-family="Noto Serif SC" font-size="14" font-weight="700">土贵乌拉</text>`;
+  html += `<text x="${cx}" y="${cy-28}" text-anchor="middle" fill="#c79b53" font-family="EB Garamond" font-style="italic" font-size="13">Tuguiwula</text>`;
+  // Legend
+  html += `<g transform="translate(40,440)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#b15e3f" stroke-width="2.5"/>
+    <text x="50" y="4" fill="#eedfb6" font-family="IBM Plex Sans" font-size="11">${lang==='zh'?'铁路':'Railway'}</text>
+    <line x1="160" y1="0" x2="200" y2="0" stroke="#7d8aa3" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="210" y="4" fill="#eedfb6" font-family="IBM Plex Sans" font-size="11">${lang==='zh'?'高速公路':'Expressway'}</text>
+  </g>`;
+  html += `</g>`;
+  document.getElementById('conn-svg').innerHTML = html;
+  // Table
+  const head = `<div class="conn-row head">
+    <div data-en="City" data-zh="城市">${lang==='zh'?'城市':'City'}</div>
+    <div data-en="Distance" data-zh="距离" style="text-align:right;">${lang==='zh'?'距离':'Distance'}</div>
+    <div data-en="Mode" data-zh="方式" style="text-align:right;">${lang==='zh'?'方式':'Mode'}</div>
+    <div data-en="Role" data-zh="角色" style="text-align:right;">${lang==='zh'?'角色':'Role'}</div>
+  </div>`;
+  const rows = CITIES.map(c=>`
+    <div class="conn-row">
+      <div class="city">${c.name[lang]}</div>
+      <div class="num">${c.dist}</div>
+      <div class="num">${c.mode[lang]}</div>
+      <div class="num">${c.role[lang]}</div>
+    </div>
+  `).join('');
+  document.getElementById('conn-table').innerHTML = head + rows;
+}
+
+/* ════════════════════════ MODULE 9 — SIMULATION ════════════════════════ */
+const simState = {};
+SIM_VARS.forEach(v=>simState[v.id] = v.init);
+function renderSimControls(){
+  const lang = isZh()?'zh':'en';
+  document.getElementById('sim-controls').innerHTML = SIM_VARS.map(v=>`
+    <div class="sim-slider">
+      <div class="top"><span class="lbl">${v.label[lang]}</span><span class="val">${simState[v.id]}</span></div>
+      <input type="range" data-id="${v.id}" min="${v.min}" max="${v.max}" step="${v.step}" value="${simState[v.id]}">
+      <div class="scale"><span>${v.min}</span><span>${v.max}</span></div>
+    </div>
+  `).join('');
+  document.querySelectorAll('.sim-slider input').forEach(inp=>{
+    inp.oninput = e=>{ simState[e.target.dataset.id] = parseFloat(e.target.value); renderSimControls(); renderSimEffects(); };
+  });
+}
+function renderSimEffects(){
+  const lang = isZh()?'zh':'en';
+  const climate = simState.climate, temp = simState.temp, wind = simState.wind, rail = simState.rail, invest = simState.invest;
+  // Heuristic effects
+  const fx = [];
+  // Population
+  let popDelta = 0;
+  if (climate < 280) popDelta -= 3; else if (climate > 450) popDelta += 1;
+  if (rail < 4) popDelta -= 4; else if (rail > 10) popDelta += 3;
+  if (invest > 20) popDelta += 4;
+  if (temp > 6) popDelta += 1;
+  fx.push({ domain:{en:'POPULATION',zh:'人口'}, desc: lang==='zh' ? `预测变化: ${popDelta>0?'+':''}${popDelta}% / 5 年` : `Projected change: ${popDelta>0?'+':''}${popDelta}% / 5 yr`, delta: popDelta>0 ? `+${popDelta}%` : `${popDelta}%`, kind: popDelta>0?'good':popDelta<-2?'bad':'neutral' });
+  // Herding
+  let herdDelta = 0;
+  if (climate < 250) herdDelta -= 30; else if (climate > 450) herdDelta += 10;
+  if (temp > 5) herdDelta -= 5;
+  fx.push({ domain:{en:'HERDING CAPACITY',zh:'载畜量'}, desc: lang==='zh' ? `草场承载力变化 ${herdDelta>0?'+':''}${herdDelta}%` : `Pasture carrying capacity ${herdDelta>0?'+':''}${herdDelta}%`, delta: herdDelta>0?`+${herdDelta}%`:`${herdDelta}%`, kind: herdDelta>0?'good':herdDelta<-10?'bad':'neutral' });
+  // Energy
+  const energyOutput = Math.round(wind * 220 / 3.2);
+  const energyChange = Math.round((wind / 3.2 - 1) * 100);
+  fx.push({ domain:{en:'ENERGY OUTPUT',zh:'能源产出'}, desc: lang==='zh' ? `风电年发电量约 ${energyOutput} 亿千瓦时` : `Annual wind generation: ~${energyOutput} TWh`, delta: energyChange>=0?`+${energyChange}%`:`${energyChange}%`, kind: energyChange>20?'good':energyChange<-10?'bad':'neutral' });
+  // Water
+  let waterDelta = 0;
+  if (climate < 280) waterDelta -= 25; else if (climate > 450) waterDelta += 10;
+  if (temp > 5) waterDelta -= 8;
+  fx.push({ domain:{en:'WATER ACCESS',zh:'水可及性'}, desc: lang==='zh' ? `地下水位变化 ${waterDelta>0?'+':''}${waterDelta}%` : `Groundwater table ${waterDelta>0?'+':''}${waterDelta}%`, delta: waterDelta>0?`+${waterDelta}%`:`${waterDelta}%`, kind: waterDelta>0?'good':waterDelta<-15?'bad':'neutral' });
+  // Out-migration
+  let migDelta = 0;
+  if (rail < 4) migDelta += 5; else if (rail > 10) migDelta -= 2;
+  if (invest > 20) migDelta -= 5; else if (invest < 5) migDelta += 8;
+  if (climate < 280) migDelta += 6;
+  fx.push({ domain:{en:'OUT-MIGRATION',zh:'外迁率'}, desc: lang==='zh' ? `年外迁率变化 ${migDelta>0?'+':''}${migDelta}%` : `Annual out-migration rate ${migDelta>0?'+':''}${migDelta}%`, delta: migDelta>0?`+${migDelta}%`:`${migDelta}%`, kind: migDelta>3?'bad':migDelta<-3?'good':'neutral' });
+  document.getElementById('sim-effects').innerHTML = fx.map(f=>`
+    <div class="sim-fx ${f.kind}">
+      <div class="domain">${f.domain[lang]}</div>
+      <div class="desc">${f.desc}</div>
+      <div class="delta">${f.delta}</div>
+    </div>
+  `).join('');
+}
+
+/* ════════════════════════ INIT ════════════════════════ */
+applyLang(localStorage.getItem('ga-lang') || 'en');
+
+const io = new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting && e.target.classList.add('in')), {threshold:.12});
+document.querySelectorAll('.section-head, .map-stage, .geo-stage, .hist-stage, .cul-stage, .set-stage, .eco-stage, .life-stage, .conn-stage, .sim-stage').forEach(el=>{
+  el.classList.add('fadeup'); io.observe(el);
+});
+</script>
+</body>
+</html>
